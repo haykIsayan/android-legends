@@ -12,9 +12,4 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
-
-    class Dada : Lege{
-
-    }
 }
