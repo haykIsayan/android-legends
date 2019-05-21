@@ -4,11 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.Observer
-import com.example.android_bleed.R
 import com.example.android_bleed.android_legends.legends.AndroidLegend
 import com.example.android_bleed.android_legends.utilities.LegendResult
 import com.example.android_bleed.android_legends.flowsteps.ActivityDestination
@@ -39,7 +37,6 @@ abstract class LegendsActivity : AppCompatActivity(), Observer<LegendResult> {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_legends)
         this.mFragmentContainerId = getFragmentContainerId()
 
         registerLauncherLegend()

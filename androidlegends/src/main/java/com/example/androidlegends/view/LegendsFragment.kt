@@ -50,7 +50,6 @@ abstract class LegendsFragment : Fragment() {
         }
     }
 
-
     fun getLegendData() = (activity as LegendsActivity).getLegendData()
 
     abstract fun getLayoutResource(): Int
